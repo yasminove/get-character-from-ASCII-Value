@@ -129,4 +129,12 @@ function getChar(c){
   126 : "~",
   127 : "DEL"
    }
+
+   for(i=0; i<Object.keys(ascii).length; i++){
+     if(c == Object.keys(ascii)[i]){
+       return ascii[Object.keys(ascii)[i]]
+     }
+   }
 }
+
+getChar(7);
